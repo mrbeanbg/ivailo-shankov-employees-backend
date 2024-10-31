@@ -1,0 +1,16 @@
+APP_CSV_DATE_FORMAT: yyyy-MM-dd
+APP_CORS_ALLOWED_ORIGINS: 'http://localhost:3000'
+
+spring:
+  application:
+    name: employees
+
+app:
+  csv:
+    dateFormat: ${APP_CSV_DATE_FORMAT}
+  cors:
+    allowedOrigins: ${APP_CORS_ALLOWED_ORIGINS}
+logging:
+  level:
+    root: WARN
+    com.example: DEBUG
