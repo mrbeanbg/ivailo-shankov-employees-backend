@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  backend:
+    image: employees-backend:latest
+    container_name: employees-backend-api
+    environment:
+      - APP_CORS_ALLOWED_ORIGINS=http://localhost:3000
+    ports:
+      - "8080:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
